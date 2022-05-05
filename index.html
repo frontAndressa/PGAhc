@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? familia= Nunito+Sans:ital,wght@0,300;0,900;1,300 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Andressa Santana</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+    <header>
+        <div><img src="./img/logo (1).png" alt="logoas"></div>
+        <ul>
+             <li><a target="blanck" href="https://www.instagram.com/santanadessa1/"> Instagram</a></li>
+             <li><a target="blanck" href="maiton:2210santana@gmail.com">Email</a></li>
+             <li><a target="blanck" href="https://wa.me/74999036440">Whatsapp</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="principal">
+            <div class="nome">
+                <h1>Andressa Santana</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()"id="seta" >
+                <i id="seta" class="bi bi-caret-down-fill"></i>
+           
+            </div>
+
+            <div style="display: none;" id="descricao">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, vel. </p>
+            </div>
+
+            <div class="informacao">
+
+               <div>Deixe seu contato</div>
+               <form action="">
+               <input type="text" placeholder=" Seu email">
+               <button>Enviar</button></form>
+
+            </div>
+        </section>
+
+    </main>
+       <script>
+           function displayAbout() {
+               var seta = document.getElementById('seta');
+               seta.classList.toggle("rodar")
+                var display = document.getElementById('descricao');
+               display.classList.toggle("aparecer")
+           }
+          
+       </script>
+
+</body>
+</html>
